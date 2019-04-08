@@ -1,13 +1,13 @@
-package com.cauchy;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
-
-@SpringBootApplication
-@ServletComponentScan
-public class App2 {
-	public static void main(String[] args) {
-		SpringApplication.run(App2.class, args);
-	}
-}
+//package com.cauchy;
+//
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.web.servlet.ServletComponentScan;
+//
+//@SpringBootApplication
+//@ServletComponentScan
+//public class App2 {
+//	public static void main(String[] args) {
+//		SpringApplication.run(App2.class, args);
+//	}
+//}

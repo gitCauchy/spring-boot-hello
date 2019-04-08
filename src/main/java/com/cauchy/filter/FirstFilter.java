@@ -10,17 +10,16 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-@WebFilter(filterName="FirstFilter",urlPatterns="/firstFilter")
+@WebFilter(filterName="FirstFilter" ,urlPatterns="/first")
 public class FirstFilter implements Filter{
 	public void destroy() {
-		
 	}
-	public void doFilter(ServletRequest request,ServletResponse response,FilterChain filter) throws IOException,ServletException{
+	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
+			throws IOException, ServletException {
 		System.out.println("come in filter");
-		filter.doFilter(request, response);
+		arg2.doFilter(arg0, arg1);
 		System.out.println("go away");
 	}
-	public void init(FilterConfig config) throws ServletException{
-		
+	public void init(FilterConfig arg0) throws ServletException {	
 	}
 }
